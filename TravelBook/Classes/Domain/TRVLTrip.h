@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TRVLTrip : NSObject
+#import "TRVLLocation.h"
+#import "TRVLRoot.h"
+
+@interface TRVLTrip : TRVLRoot
 
 @property (nonatomic, copy) NSDate *startDate;
 @property (nonatomic, copy) NSDate *endDate;
-@property (nonatomic, copy) NSDictionary *destination;
-
-- (instancetype)initWithKey:(NSString *)key;
+@property (nonatomic, strong) TRVLLocation *destination;
 
 @end

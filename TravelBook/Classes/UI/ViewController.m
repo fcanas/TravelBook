@@ -27,7 +27,7 @@
 {
     TTTTimeIntervalFormatter *timeFormatter = [[TTTTimeIntervalFormatter alloc] init];
     self.headerLabel.text = [NSString stringWithFormat:@"Trip to %@ starting %@",
-                             self.trip.destination[@"name"],
+                             self.trip.destination.name,
                              [timeFormatter stringForTimeIntervalFromDate:[NSDate date]
                                                                    toDate:self.trip.startDate]];
 }

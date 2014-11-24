@@ -10,6 +10,8 @@
 		E7090C9E1A229E940052161A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7090C991A229E940052161A /* AppDelegate.m */; };
 		E7090C9F1A229E940052161A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7090C9D1A229E940052161A /* ViewController.m */; };
 		E7090CA51A22E6900052161A /* TRVLTrip.m in Sources */ = {isa = PBXBuildFile; fileRef = E7090CA41A22E6900052161A /* TRVLTrip.m */; };
+		E721DABD1A22F82100A1EBEB /* TRVLLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E721DABC1A22F82100A1EBEB /* TRVLLocation.m */; };
+		E721DAC01A22F86300A1EBEB /* TRVLRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = E721DABF1A22F86300A1EBEB /* TRVLRoot.m */; };
 		E7A67BE51A2298B500964900 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A67BE41A2298B500964900 /* main.m */; };
 		E7A67BEE1A2298B500964900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A67BEC1A2298B500964900 /* Main.storyboard */; };
 		E7A67BF01A2298B500964900 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A67BEF1A2298B500964900 /* Images.xcassets */; };
@@ -39,6 +41,10 @@
 		E7090CA31A22E6900052161A /* TRVLTrip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVLTrip.h; sourceTree = "<group>"; };
 		E7090CA41A22E6900052161A /* TRVLTrip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVLTrip.m; sourceTree = "<group>"; };
 		E7090CA61A22E7C50052161A /* DevEnvironment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DevEnvironment.xcconfig; sourceTree = "<group>"; };
+		E721DABB1A22F82100A1EBEB /* TRVLLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVLLocation.h; sourceTree = "<group>"; };
+		E721DABC1A22F82100A1EBEB /* TRVLLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVLLocation.m; sourceTree = "<group>"; };
+		E721DABE1A22F86300A1EBEB /* TRVLRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRVLRoot.h; sourceTree = "<group>"; };
+		E721DABF1A22F86300A1EBEB /* TRVLRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRVLRoot.m; sourceTree = "<group>"; };
 		E7A67BDF1A2298B500964900 /* TravelBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A67BE31A2298B500964900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A67BE41A2298B500964900 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -102,6 +108,10 @@
 			children = (
 				E7090CA31A22E6900052161A /* TRVLTrip.h */,
 				E7090CA41A22E6900052161A /* TRVLTrip.m */,
+				E721DABB1A22F82100A1EBEB /* TRVLLocation.h */,
+				E721DABC1A22F82100A1EBEB /* TRVLLocation.m */,
+				E721DABE1A22F86300A1EBEB /* TRVLRoot.h */,
+				E721DABF1A22F86300A1EBEB /* TRVLRoot.m */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -311,9 +321,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7090C9F1A229E940052161A /* ViewController.m in Sources */,
+				E721DAC01A22F86300A1EBEB /* TRVLRoot.m in Sources */,
 				E7090C9E1A229E940052161A /* AppDelegate.m in Sources */,
 				E7A67BE51A2298B500964900 /* main.m in Sources */,
 				E7090CA51A22E6900052161A /* TRVLTrip.m in Sources */,
+				E721DABD1A22F82100A1EBEB /* TRVLLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

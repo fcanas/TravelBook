@@ -14,12 +14,11 @@
 
 @interface TRVLTrip ()
 @property (nonatomic, strong) Firebase *firebase;
-
 @end
 
 @implementation TRVLTrip
 
-+ (void)initialize
++ (void)load
 {
     OHMMappable([TRVLTrip class]);
     
@@ -34,31 +33,5 @@
                                       NSStringFromSelector(@selector(endDate)) : dateTranform,});
 }
 
-- (instancetype)initWithKey:(NSString *)key
-{
-    self = [super init];
-    
-    if (self == nil) {
-        return nil;
-    }
-    
-    NSLog(@"FIREBASE_HOST_NAME");
-    
-    NSURLComponents *firebaseURLComponents = [[NSURLComponents alloc] init];
-    firebaseURLComponents.host = FIREBASE_HOST_NAME;
-    firebaseURLComponents.path = [NSString stringWithFormat:@"/%@", key];
-    firebaseURLComponents.scheme = @"https";
-    
-    self.firebase = [[Firebase alloc] initWithUrl:firebaseURLComponents.string];
-    
-    [self.firebase observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
-        NSLog(@"%@", snapshot.value);
-        [self setValuesForKeysWithDictionary:snapshot.value];
-    } withCancelBlock:^(NSError *error) {
-        NSLog(@"%@", error.description);
-    }];
-    
-    return self;
-}
 
 @end
