@@ -8,15 +8,18 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "TRVLTrip.h"
 
+@interface ViewController ()
+@property (nonatomic, strong) TRVLTrip *trip;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.trip = [[TRVLTrip alloc] initWithKey:@"trip0"];
 }
 
 - (void)didReceiveMemoryWarning {

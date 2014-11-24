@@ -1,0 +1,16 @@
+PODS:
+  - Firebase (2.0.2)
+  - ISO8601DateFormatter (0.7)
+  - OHMKit (0.1.0)
+
+DEPENDENCIES:
+  - Firebase
+  - ISO8601DateFormatter (~> 0.7)
+  - OHMKit
+
+SPEC CHECKSUMS:
+  Firebase: 793a4581e4f4d9cb1e156cab89ca367f3d02b473
+  ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
+  OHMKit: b70ab16add2eb78ffe138b7418d00ad2754f1719
+
+COCOAPODS: 0.35.0
