@@ -10,6 +10,10 @@
 
 @interface TRVLTrip : NSObject
 
+@property (nonatomic, copy) NSDate *startDate;
+@property (nonatomic, copy) NSDate *endDate;
+@property (nonatomic, copy) NSDictionary *destination;
+
 - (instancetype)initWithKey:(NSString *)key;
 
 @end

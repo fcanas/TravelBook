@@ -1,15 +1,36 @@
 PODS:
   - Firebase (2.0.2)
+  - FormatterKit (1.7.4):
+    - FormatterKit/AddressFormatter (= 1.7.4)
+    - FormatterKit/ArrayFormatter (= 1.7.4)
+    - FormatterKit/ColorFormatter (= 1.7.4)
+    - FormatterKit/LocationFormatter (= 1.7.4)
+    - FormatterKit/NameFormatter (= 1.7.4)
+    - FormatterKit/OrdinalNumberFormatter (= 1.7.4)
+    - FormatterKit/TimeIntervalFormatter (= 1.7.4)
+    - FormatterKit/UnitOfInformationFormatter (= 1.7.4)
+    - FormatterKit/URLRequestFormatter (= 1.7.4)
+  - FormatterKit/AddressFormatter (1.7.4)
+  - FormatterKit/ArrayFormatter (1.7.4)
+  - FormatterKit/ColorFormatter (1.7.4)
+  - FormatterKit/LocationFormatter (1.7.4)
+  - FormatterKit/NameFormatter (1.7.4)
+  - FormatterKit/OrdinalNumberFormatter (1.7.4)
+  - FormatterKit/TimeIntervalFormatter (1.7.4)
+  - FormatterKit/UnitOfInformationFormatter (1.7.4)
+  - FormatterKit/URLRequestFormatter (1.7.4)
   - ISO8601DateFormatter (0.7)
   - OHMKit (0.1.0)
 
 DEPENDENCIES:
   - Firebase
+  - FormatterKit (~> 1.7)
   - ISO8601DateFormatter (~> 0.7)
   - OHMKit
 
 SPEC CHECKSUMS:
   Firebase: 793a4581e4f4d9cb1e156cab89ca367f3d02b473
+  FormatterKit: 54b81d587a6c448bbdbadc716b744c6aa6e3125b
   ISO8601DateFormatter: 59731cd880cf87e71b4fa95f0d6b713dcbc4cbce
   OHMKit: b70ab16add2eb78ffe138b7418d00ad2754f1719
 

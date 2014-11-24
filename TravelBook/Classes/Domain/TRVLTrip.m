@@ -10,12 +10,29 @@
 
 #import <Firebase/Firebase.h>
 #import <ISO8601DateFormatter/ISO8601DateFormatter.h>
+#import <OHMKit/ObjectMapping.h>
 
 @interface TRVLTrip ()
 @property (nonatomic, strong) Firebase *firebase;
+
 @end
 
 @implementation TRVLTrip
+
++ (void)initialize
+{
+    OHMMappable([TRVLTrip class]);
+    
+    static ISO8601DateFormatter *dateFormatter;
+    dateFormatter = [[ISO8601DateFormatter alloc] init];
+    
+    OHMValueAdapterBlock dateTranform = ^NSDate *(NSString *dateString){
+        return [dateFormatter dateFromString:dateString];
+    };
+    
+    OHMSetAdapter([TRVLTrip class], @{NSStringFromSelector(@selector(startDate)) : dateTranform,
+                                      NSStringFromSelector(@selector(endDate)) : dateTranform,});
+}
 
 - (instancetype)initWithKey:(NSString *)key
 {
@@ -36,6 +53,7 @@
     
     [self.firebase observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot) {
         NSLog(@"%@", snapshot.value);
+        [self setValuesForKeysWithDictionary:snapshot.value];
     } withCancelBlock:^(NSError *error) {
         NSLog(@"%@", error.description);
     }];
